@@ -1,0 +1,81 @@
+body {
+
+  background: url("https://i.ibb.co/YcwTZJv/mount.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: motionBlur();
+}
+
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+  .user-bar-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.status {
+  &-online {
+    color: rgb(10, 150, 100);
+  }
+  &-offline {
+    color: rgb(200, 100, 100);
+  }
+  &-blocked{
+    color: rgb(200, 100, 100);
+  }
+  &-not-blocked{
+    color: rgb(10, 150, 100);
+  }
+}
+.form{
+  width: 400px;
+  background-image: linear-gradient(to right, white, pink);
+  box-shadow: 3px 3px 3px;
+}
+
+.center-all{
+  margin-top: 10px;
+}
+
+.sign{
+  margin-top: 100px;
+}
+
+.logout-btn {
+  color: white;
+  background-color: brown;
+  margin-left: 20px;
+}
+
+.color-nav{
+  color: white;
+  font-size: 20px;
+  text-shadow: 3px 3px 3px black;
+}
+
+
+.color-title{
+  text-shadow: 3px 3px 3px black;
+  color: white;
+  font-size: 40px;
+}
+
+
+@media screen and(min-width: 992px) {
+  .user-bar-container {
+    position: absolute;
+    right: 0;
+  }
+  .container {
+    position: relative;
+  }
+}
+@media screen and(max-width: 767px) {
+  td,
+  th {
+    font-size: 14px;
+  }
+}
